@@ -22,3 +22,13 @@ window.onresize = function() {
 		callback();
 	}, 100);
 };
+
+$(document).ready(function () {
+  $('.flickr-photos-list').jflickrfeed({
+                    limit: 12,
+                    qstrings: {
+                        id: '64047847@N03'
+                    },
+                    itemTemplate: '<li><a href="{{image_b}}"><img src="{{image_s}}" alt="{{title}}" /></a></li>'
+                });
+});   

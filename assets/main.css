@@ -333,6 +333,26 @@ HOBBIES
   top: 6px;
   left: 7px;
 }
+
+
+.flickr-photos-list {
+padding-left: 0;
+list-style: none;
+margin-bottom: 0;
+overflow: hidden;
+}
+.flickr-photos-list > li {
+float: left;
+margin-right: 5px;
+margin-bottom: 5px;
+}
+
+.flickr-photos-list > li img {
+  width: 64px;
+  height: 64px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
 /*******************************************
 MEDIA
 *******************************************/
