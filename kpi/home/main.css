@@ -1,0 +1,123 @@
+body {
+    padding-top: 3%;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+.breadcrumb {
+    padding: 0px;
+  background: #D4D4D4;
+  list-style: none; 
+  overflow: hidden;
+    margin-top: 20px;
+}
+.breadcrumb>li+li:before {
+  padding: 0;
+}
+.breadcrumb li { 
+  float: left; 
+}
+.breadcrumb li.active a {
+  background: brown;                   /* fallback color */
+  background: #24a011 ; 
+}
+.breadcrumb li.completed a {
+  background: brown;                   /* fallback color */
+  background: hsl(0, 0%, 0%)
+}
+.breadcrumb li.active a:after {
+  border-left: 30px solid #24a011 ;
+}
+.breadcrumb li.completed a:after {
+  border-left: 30px solid hsl(0, 0%, 0%);
+} 
+
+.breadcrumb li a {
+  color: white;
+  text-decoration: none; 
+  padding: 10px 0 10px 45px;
+  position: relative; 
+  display: block;
+  float: left;
+}
+.breadcrumb li a:after { 
+  content: " "; 
+  display: block; 
+  width: 0; 
+  height: 0;
+  border-top: 50px solid transparent;           /* Go big on the size, and let overflow hide */
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid hsla(0, 0%, 83%, 1);
+  position: absolute;
+  top: 50%;
+  margin-top: -50px; 
+  left: 100%;
+  z-index: 2; 
+} 
+.breadcrumb li a:before { 
+  content: " "; 
+  display: block; 
+  width: 0; 
+  height: 0;
+  border-top: 50px solid transparent;           /* Go big on the size, and let overflow hide */
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid white;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px; 
+  margin-left: 1px;
+  left: 100%;
+  z-index: 1; 
+} 
+.breadcrumb li:first-child a {
+  padding-left: 15px;
+}
+.breadcrumb li a:hover { background: #ffc107  ; }
+.breadcrumb li a:hover:after { border-left-color: #ffc107   !important; }
+.bcicle {
+  text-align: center;
+      padding-top: 2%;
+    padding-bottom: 2%; 
+}
+ .bcicle li {
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  line-height: 2em;
+  border-radius: 1em;
+  background: dodgerblue;
+  margin: 0 1em;
+  display: inline-block;
+  color: white;
+  position: relative;
+}
+
+.bcicle li::before{
+  content: '';
+  position: absolute;
+  top: .9em;
+  left: -4em;
+  width: 4em;
+  height: .2em;
+  background: dodgerblue;
+  z-index: -1;
+}
+
+
+.bcicle li:first-child::before {
+  display: none;
+}
+
+.bcicle li.active {
+  background: #24a011;
+}
+
+.bcicle .active ~ li {
+  background: lightblue;
+}
+
+.bcicle .active ~ li::before {
+  background: lightblue;
+}
