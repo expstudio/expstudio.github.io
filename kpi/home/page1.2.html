@@ -43,56 +43,7 @@
 	<div id="wrapper">
 	
 
-        <!-- Navigation -->
-        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="dashboard.html">Bluesea KPI</a>
-            </div>
-            <!-- /.navbar-header -->
-
-            <ul class="nav navbar-top-links navbar-right">
-				
-				<li>
-					<a href="dashboard.html"><i class="fas fa-chart-line"></i> ภาพรวม</a>
-				</li>	
-				<li>
-                	<a href="page2.1.html"><i class="fas fa-file-signature"></i> แบบประเมิน</a>
-                </li>
-                <li>
-                	<a href="page1.3.html"><i class="fa fa-edit fa-fw"></i> คำขอรับการประเมิน</a>
-                </li>
-                <li>
-                	<a href="#"><i class="fas fa-book"></i>&nbsp;คู่มือ</a>           
-                </li>
-                
-                
-                
-                <!-- /.dropdown -->
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-user">
-                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
-                        </li>
-                        <li class="divider"></li>
-                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
-                        </li>
-                    </ul>
-                    <!-- /.dropdown-user -->
-                </li>
-                <!-- /.dropdown -->
-            </ul>
-            <!-- /.navbar-top-links -->
-
+        
             <div class="navbar-default sidebar" role="navigation"> <!-- /.sidebar-collapse -->
             </div>
             <!-- /.navbar-static-side -->
@@ -116,11 +67,11 @@
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
     <select name="department" class="form-control selectpicker">
-      <option value="">เลือก</option>
-      <option>กิจกรรม</option>
-      <option>โครงการ</option>
-      <option >งาน</option>
-  
+      <option value="">งานสอน</option>
+      <option>งานสอน</option>
+      <option>งานวิจัย</option>
+      <option>บริการวิชาการ</option>
+      <option>กิจกรรมคณะ</option>
     </select>
   </div>
 </div>
@@ -133,7 +84,7 @@
   <div class="col-md-4 inputGroupContainer">
   <div class="input-group">
   <span class="input-group-addon"><i class="fas fa-angle-double-right"></i></span>
-  <input  name="user_name" placeholder="Username" class="form-control"  type="text">
+  <input  name="user_name" placeholder="Username" class="form-control"  type="text" value="อบรมวิชาการหรือวิชาชีพ" >
     </div>
   </div>
 </div>
@@ -145,11 +96,12 @@
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
     <select name="department" class="form-control selectpicker">
-      <option value="">เลือก</option>
+      <option value="">3</option>
       <option>1</option>
       <option>2</option>
-      <option >3</option>
-  
+      <option>3</option>
+  	  <option>4</option>
+      <option>5</option>
     </select>
   </div>
 </div>
@@ -157,50 +109,50 @@
 <!-- choice dropdown-->
 <div class="form-group">
   <label class="col-md-4 control-label" >ระดับค่าเป้าหมาย 1</label> 
-    <div class="col-md-4 inputGroupContainer">
+    <div class="col-md-4 inputGroupContainer col-lg-7">
     <div class="input-group">
   <span class="input-group-addon"><i class="fas fa-angle-double-right"></i></span>
-  <input name="user_password" placeholder="ระดับค่าเป้าหมายที่ 1" class="form-control"  type="password">
+		<textarea name="AAAAAA" cols="50" rows="10" id="">1 งาน</textarea>
     </div>
   </div>
 </div>
-<!-- Text input 1-->
+<!-- Text area 1-->
 <div class="form-group">
   <label class="col-md-4 control-label" >ระดับค่าเป้าหมาย 2</label> 
     <div class="col-md-4 inputGroupContainer col-lg-7">
     <div class="input-group">
   <span class="input-group-addon"><i class="fas fa-angle-double-right"></i></span>
- <textarea name="" id="" cols="30" rows="10"></textarea>
+ <textarea name="" id="" cols="30" rows="10">2 งาน</textarea>
     </div>
   </div>
 </div>
 <!-- Text input 2-->
 <div class="form-group">
   <label class="col-md-4 control-label" >ระดับค่าเป้าหมาย 3</label> 
-    <div class="col-md-4 inputGroupContainer">
+    <div class="col-md-4 inputGroupContainer col-lg-7">
     <div class="input-group">
   <span class="input-group-addon"><i class="fas fa-angle-double-right"></i></span>
-  <input name="user_password" placeholder="ระดับค่าเป้าหมายที่ 3" class="form-control"  type="password">
+  <textarea name="" id="" cols="30" rows="10">3 งาน</textarea>
     </div>
   </div>
 </div>
 <!-- Text input 3-->
 <div class="form-group">
   <label class="col-md-4 control-label" >ระดับค่าเป้าหมาย 4</label> 
-    <div class="col-md-4 inputGroupContainer">
+    <div class="col-md-4 inputGroupContainer col-lg-7">
     <div class="input-group">
   <span class="input-group-addon"><i class="fas fa-angle-double-right"></i></span>
-  <input name="user_password" placeholder="ระดับค่าเป้าหมายที่ 4" class="form-control"  type="password">
+  <textarea name="" id="" cols="30" rows="10">4 งาน</textarea>
     </div>
   </div>
 </div>	
 <!-- Text input 4-->	
 <div class="form-group">
   <label class="col-md-4 control-label" >ระดับค่าเป้าหมาย 5</label> 
-    <div class="col-md-4 inputGroupContainer">
+    <div class="col-md-4 inputGroupContainer col-lg-7">
     <div class="input-group">
   <span class="input-group-addon"><i class="fas fa-angle-double-right"></i></span>
-  <input name="user_password" placeholder="ระดับค่าเป้าหมายที่ 5" class="form-control"  type="password">
+		<textarea name="" id="" cols="30" rows="10">5 งาน</textarea>
     </div>
   </div>
 </div>       
@@ -211,7 +163,7 @@
   <label class="col-md-4 control-label"></label>
   <div class="col-md-4"><br>
 	  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-   <button type="button" class="btn">ยกเลิก</button>&nbsp;<button type="button" class="btn"><a href="page1.10.html">เพิ่มรายการ</a></button>
+  <a href="page1.10.html" class="btn btn-default">ยกเลิก</a>&nbsp;<a href="page1.10.html" class="btn btn-default">เพิ่มรายการ</a>
   </div>
  
 </div>
@@ -250,7 +202,7 @@
     <script src="../dist/js/sb-admin-2.js"></script>
 	 
 <!-- Initialize the editor. -->
-    <script> $(function() { $('textarea').froalaEditor() }); </script>
+<script> $(function() { $('textarea').froalaEditor() }); </script>
 			
 <link href='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.8.4/css/froala_editor.min.css' rel='stylesheet' type='text/css' />
 <link href='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.8.4/css/froala_style.min.css' rel='stylesheet' type='text/css' />

@@ -76,7 +76,7 @@
                         <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
-                        <li><a href="edit_profile.html"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        <li><a data-toggle="modal" data-target="#exampleModal"><i class="fa fa-user fa-fw"></i> User Profile</a>
                         </li>
                         <li><a href="setting.html"><i class="fa fa-gear fa-fw"></i> Settings</a>
                         </li>
@@ -431,55 +431,6 @@
                 <!-- /.col-lg-4 -->
             </div>
             <!-- /.row -->
-            <!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Modal Header</h4>
-      </div>
-      <div class="modal-body">
-         <div class="row">
-            <div class="col-md-12">
-        <img src="Logo.png" class="img-responsive center-block img-circle" id="logo" />
-        
-           <form>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-  </div>
-  <div class="form-group">
-    <label for="exampleInputFile">File input</label>
-    <input type="file" id="exampleInputFile">
-    <p class="help-block">Example block-level help text here.</p>
-  </div>
-  <div class="checkbox">
-    <label>
-      <input type="checkbox"> Check me out
-    </label>
-  </div>
-  <button type="submit" class="btn btn-default">Submit</button>
-</form>
-
-                 
-            </div>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">ยกเลิก</button>
-        <button type="button" class="btn btn-default" data-dismiss="modal">ยกเลิก</button>
-      </div>
-    </div>
-
-  </div>
-</div>
         </div>
         <!-- /#page-wrapper -->
 
@@ -502,6 +453,138 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="../dist/js/sb-admin-2.js"></script>
+<!-- popup1 -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h6 class="modal-title" id="exampleModalLabel">Edit Profile</h6>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		<form class="form-horizontal">
+							<div class="form-group" align="center">
+								<div class="col-lg-3">
+								<img src="../image/man.jpg" class="img-responsive center-block img-circle" id="logo" />
+								</div>	
+							</div>
+  							<div class="form-group">	
+    								<label for="inputfullname" class="col-sm-2 control-label">ชื่อ</label>
+   								<div class="col-sm-10">
+      								<input type="fullname" class="form-control" id="fullname" value ="นายธนวรรธน์ วรรธนะภูติ">
+   								 </div>
+ 							 </div>
+							
+							<div class="form-group">
+    								<label for="inputposition" class="col-sm-2 control-label">ตำแหน่ง</label>
+   								<div class="col-sm-10">
+      								<input type="position" class="form-control" id="position" value ="อาจารย์">
+   								 </div>
+ 							 </div>
+							
+  								<div class="form-group">
+    								<label for="inputpositiontype" class="col-sm-2 control-label">ประเภทตำแหน่ง</label>
+   								<div class="col-sm-10">
+      								<input type="inputpositiontype" class="form-control" id="inputpositiontype" value ="วิชาการ">
+   								 </div>
+ 							 </div>
+							
+							<div class="form-group">
+    								<label for="inputpositionlevel" class="col-sm-2 control-label">ระดับตำแหน่ง</label>
+   								<div class="col-sm-10">
+      								<input type="inputpositionlevel" class="form-control" id="inputpositionlevel" placeholder=" ">
+   								 </div>
+ 							 </div>
+							
+							<div class="form-group">
+    								<label for="inputsub" class="col-sm-2 control-label">สังกัด</label>
+   								<div class="col-sm-10">
+      								<input type="inputsub" class="form-control" id="inputsub" value="คณบดีคณะบริหารธุรกิจ">
+   								 </div>
+ 							 </div>
+							
+								<div class="form-group">
+  							  		<div class="col-sm-offset-5 col-sm-10">
+      									<button type="submit" class="btn btn-default">ยกเลิก</button>
+								    	<button type="submit" class="btn btn-default">บันทึก</button>
+   									 </div>
+ 							 	</div>
+							
+				
+							</form>
+		</div>	
+      </div>
+    
+    </div>
+  </div>
+<!-- popup1 -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h6 class="modal-title" id="exampleModalLabel">Edit Profile</h6>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		<form class="form-horizontal">
+							<div class="form-group" align="center">
+								<div class="col-lg-3">
+								<img src="../image/man.jpg" class="img-responsive center-block img-circle" id="logo" />
+								</div>	
+							</div>
+  							<div class="form-group">	
+    								<label for="inputfullname" class="col-sm-2 control-label">ชื่อ</label>
+   								<div class="col-sm-10">
+      								<input type="fullname" class="form-control" id="fullname" value ="นายธนวรรธน์ วรรธนะภูติ">
+   								 </div>
+ 							 </div>
+							
+							<div class="form-group">
+    								<label for="inputposition" class="col-sm-2 control-label">ตำแหน่ง</label>
+   								<div class="col-sm-10">
+      								<input type="position" class="form-control" id="position" value ="อาจารย์">
+   								 </div>
+ 							 </div>
+							
+  								<div class="form-group">
+    								<label for="inputpositiontype" class="col-sm-2 control-label">ประเภทตำแหน่ง</label>
+   								<div class="col-sm-10">
+      								<input type="inputpositiontype" class="form-control" id="inputpositiontype" value ="วิชาการ">
+   								 </div>
+ 							 </div>
+							
+							<div class="form-group">
+    								<label for="inputpositionlevel" class="col-sm-2 control-label">ระดับตำแหน่ง</label>
+   								<div class="col-sm-10">
+      								<input type="inputpositionlevel" class="form-control" id="inputpositionlevel" placeholder=" ">
+   								 </div>
+ 							 </div>
+							
+							<div class="form-group">
+    								<label for="inputsub" class="col-sm-2 control-label">สังกัด</label>
+   								<div class="col-sm-10">
+      								<input type="inputsub" class="form-control" id="inputsub" value="คณบดีคณะบริหารธุรกิจ">
+   								 </div>
+ 							 </div>
+							
+								<div class="form-group">
+  							  		<div class="col-sm-offset-5 col-sm-10">
+      									<button type="submit" class="btn btn-default">ยกเลิก</button>
+								    	<button type="submit" class="btn btn-default">บันทึก</button>
+   									 </div>
+ 							 	</div>
+							
+				
+							</form>
+		</div>	
+      </div>
+    
+    </div>
+  </div>
 
 </body>
 
